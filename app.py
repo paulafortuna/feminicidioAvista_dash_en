@@ -100,8 +100,8 @@ app.layout = html.Div(children=[
                         html.H3("NOT ONE WOMAN LESS!"),
                         html.P(
                             id='animation_description',
-                            children='In the majority of feminicide cases, there is some type of relationship between the people in the news. '
-                                     'However, there is a diversity of stories and crimes and we should not forget them.',
+                            children='In the majority of feminicide cases, there is some type of relationship between the perpetrator and victim. '
+                                     'However, there is a diversity of stories and crimes that we should not forget.',
                         ),
                         html.Div(id='animation_description_container_fill'),
                         html.Div(id='animation_container',
@@ -122,12 +122,12 @@ app.layout = html.Div(children=[
                     html.Div(
                         id='frequencies_plot',
                         children=[
-                            html.H3("NOTÍCIAS NO TEMPO"),
+                            html.H3("NEWS IN TIME"),
                             html.P(
                                 id='time_description',
-                                children='O número de notícias referentes a casos de feminicídio parece estar a aumentar ao longo do tempo. '
-                                         'Isto pode indicar um aumento de feminicídios, um maior interesse jornalístico no tema, '
-                                         'ou também uma maior facilidade em aceder a notícias mais recentes através do Arquivo.pt.',
+                                children='The number of femicide cases seems to be increasing over time. '
+                                         'This may indicate an increase on femicide number, an increased interest in the topic from media, '
+                                         'or an increased data accessibiity for more recent material in Arquivo.pt.',
                             ),
                             dcc.Graph(
                                 id='graph',
@@ -138,7 +138,7 @@ app.layout = html.Div(children=[
                                 children=[
                                     html.P(
                                         id="instruction_freq_plot",
-                                        children="Clique numa barra do gráfico para ver as notícias desse ano na tabela",
+                                        children="Press a plot bar to update the table with correspondent cases",
                                     ),
                                 ],
                             ),
@@ -161,12 +161,12 @@ app.layout = html.Div(children=[
             html.Div(
                 id='regions_plot',
                 children=[
-                    html.H3("NOTÍCIAS POR DISTRITOS"),
+                    html.H3("NEWS BY DISTRICT"),
                     html.P(
                         id='regions_description',
-                        children='Mais feminicídios têm ocorrido nas regiões mais populosas do país. Contudo, a relação '
-                                 'entre crime e número de habitantes não é linear. Por exemplo, Braga é a terceira região '
-                                 'mais populosa do país, mas aparece atrás de Setúbal e Santarém com menos casos que estes distritos.',
+                        children='The number of femicides is bigger in the regions where more people live. However, the relationship '
+                                 'between crime and inhabitant number is not linear. For instance, Braga is the third city with more people. '
+                                 'However, it appears behind Setúbal and Santarém districts with lessa cases.',
                     ),
                     dcc.Loading(
                         id="loading-1",
@@ -183,7 +183,7 @@ app.layout = html.Div(children=[
                         children=[
                             html.P(
                                 id="instruction_map",
-                                children="Clique num distrito no mapa para ver as notícias na tabela",
+                                children="Press a plot bar to update the table with correspondent cases",
                             ),
                         ],
                     ),
