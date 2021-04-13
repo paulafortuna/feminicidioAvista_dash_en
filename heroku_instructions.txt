@@ -1,0 +1,16 @@
+https://github.com/drstarson/dash-heroku-app
+https://devcenter.heroku.com/articles/github-integration
+
+pip freeze > requirements.txt
+
+git init
+
+python3 -m virtualenv venv
+source venv/bin/activate
+
+
+git add .
+git commit -m "heroku test"
+git push heroku master
+heroku ps:scale web=1
+heroku logs --tail
