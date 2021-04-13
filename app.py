@@ -207,38 +207,35 @@ app.layout = html.Div(children=[
             html.H3("MANIFESTO"),
             html.P(
                 id='manifesto_description',
-                children='O objectivo da plataforma Feminicídio à Vista é dar visibilidade ao problema do feminicídio e '
-                         'não deixar que as mulheres assassinadas sejam esquecidas. Para isso, o Arquivo.pt permitiu '
-                         'recuperar estas histórias e anotar um conjunto de dados sobre feminicídios que se disponibilizam '
-                         'à comunidade. Estes dados podem ser utilizados não só por outros investigadores, mas também '
-                         'para construir modelos com tecnologias de inteligência artificial para anotar novas notícias '
-                         'e propriedades das notícias referentes a feminicídios.'
+                children='The "Feminicídio à Vista" project goal is to bring attention to the femicide problem and not let '
+                         'the murdered women forgotten. Arquivo.pt API allowed us to recover the those stories and '
+                         'retrieve a femicide dataset that we make available to the community. '
+                         'Those data can be used not only by researchers but also to build artificial intelligence models.'
+                         ' With such tools it would be possible to find and annotate other femicide news.'
             ),
             html.P(
                 id='manifesto_description2',
-                children='Feminicídio é um termo relativamente recente, que designa o extermínio de mulheres.'
-                         ' Estes crimes não podem ser vistos como desligados das questões de género e da intencionalidade de controlar a '
-                         'existência e comportamento femininos. Em alguns países, o termo feminicídio passou a estar contemplado na lei. '
-                         'Contudo, esse não é o caso de Portugal. Em Portugal, existe um vazio legal [1] e falta de estudos a respeito do feminicídio [2]. ',
+                children='Femicide is a relatively new term. It refers to extermination of women.'
+                         ' These crimes can not be seen as disconnected from gender issues and intensions to control women behavior and existence.'
+                         'In some countries femicide crime is now present in the law. '
+                         'However, this is not the case in Portuguese. In Portugal there is a void in the law [1] and there are studies missing on this issue [2]. ',
             ),
             html.P(
                 id='manifesto_description3',
-                children= 'O projecto Feminicidio à Vista complementa outros esforços de investigação [3] ao disponibilizar '
-                         'à comunidade não só um conjunto de dados mas também uma plataforma open source. Nesta é possível '
-                         'relembrar as vítimas e de uma forma dinâmica ver a relação entre as notícias individuais '
-                         'e estatísticas no tempo e espaço. '
-                        'Se, por um lado, os dados apresentados fazem referência a casos individuais de feminicídio, '
-                         'por outro lado, o feminicídio é um problema que requer uma resposta da sociedade. Para isso é '
-                         'necessário agir e os primeiros passos são reconhecer o feminicídio legalmente, recolher dados '
-                         'e analizá-los para se poder intervir. ',
+                children= 'This project adds to other research efforts [3] and makes available '
+                         'not only a dataset but also a open-source platform. In this it is possible '
+                         'to not forget the victims, and see the relationship between news statistics and space and time. '
+                        'The presented data refer to individual femicide cases. '
+                         'However, femicide requires a collective societal response. For this '
+                         'we need to act and the first steps are recognize femicide as a crime, collect data, '
+                         'analyse those data for interventions planning. ',
             ),
             html.P(
                 id='manifesto_description4',
-                children= '*Este projeto não é*: um conjunto de estatísticas oficiais sobre o feminicídio em Portugal. '
-                          'Neste projeto foram recolhidas notícias no Arquivo.pt como fonte de informação. '
-                          'Este método pode por si só conter erros e deixar de fora alguns casos. Este projeto é apenas '
-                          'um esforço inicial de recolha de dados, que aponta a necessidade de documentar estes crimes '
-                          'oficialmente e de forma mais estruturada. ',
+                children= '*This project is not*: a set of official statistics about femicide in Portugal. '
+                          'In this project we collected news on the Arquivo.pt. '
+                          'This method has limitations and probably misses data. This project is only '
+                          'an initial data collection effort, that points to the need of officially better document those crimes. ',
             )
         ],
     ),
