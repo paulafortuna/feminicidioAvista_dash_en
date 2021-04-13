@@ -97,11 +97,11 @@ app.layout = html.Div(children=[
                 html.Div(
                     id='animation_plot',
                     children=[
-                        html.H3("NEM UMA A MENOS!"),
+                        html.H3("NOT ONE WOMAN LESS!"),
                         html.P(
                             id='animation_description',
-                            children='Na maioria dos casos de feminicídio encontrados, os intervenientes têm algum tipo de relação. '
-                                     'Contudo, a multiplicidade de histórias demostra a diversidade destes crimes que não devemos esquecer.',
+                            children='In the majority of feminicide cases, there is some type of relationship between the people in the news. '
+                                     'However, there is a diversity of stories and crimes and we should not forget them.',
                         ),
                         html.Div(id='animation_description_container_fill'),
                         html.Div(id='animation_container',
