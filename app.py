@@ -78,9 +78,9 @@ app.layout = html.Div(children=[
                             ),
                     html.P(
                             id='pagedescription',
-                            children='Feminicídio à Vista is a datactivism plataform. It calls attention '
-                                     'and demands an answer to the violence against women in Portugal that leads to murder many times. '
-                                     'It include itself in open-source movements to challenge existing power relations.',
+                            children='"Feminicídio à Vista" is a datactivism plataform. It calls attention and demands an '
+                                     'answer to the violence against women in Portugal. This violence leads to murder many '
+                                     'times. It includes itself in open-source movements to challenge existing power relations.',
                     ),
 
                 ],
@@ -100,8 +100,9 @@ app.layout = html.Div(children=[
                         html.H3("NOT ONE WOMAN LESS!"),
                         html.P(
                             id='animation_description',
-                            children='In the majority of feminicide cases, there is some type of relationship between the perpetrator and victim. '
-                                     'However, there is a diversity of stories and crimes that we should not forget.',
+                            children='In the majority of femicide cases, there is some sort of relationship between the '
+                                     'perpetrator and victim. However, there is a diversity of stories and crimes that '
+                                     'we should not forget.',
                         ),
                         html.Div(id='animation_description_container_fill'),
                         html.Div(id='animation_container',
@@ -125,9 +126,9 @@ app.layout = html.Div(children=[
                             html.H3("NEWS IN TIME"),
                             html.P(
                                 id='time_description',
-                                children='The number of femicide cases seems to be increasing over time. '
-                                         'This may indicate an increase on femicide number, an increased interest in the topic from media, '
-                                         'or an increased data accessibiity for more recent material in Arquivo.pt.',
+                                children='The number of femicide cases seems to be increasing over time. This may indicate '
+                                         'an increase in femicide number, an increased interest in the topic from media, '
+                                         'or an increased data accessibility for more recent material in Arquivo.pt.',
                             ),
                             dcc.Graph(
                                 id='graph',
@@ -166,7 +167,7 @@ app.layout = html.Div(children=[
                         id='regions_description',
                         children='The number of femicides is bigger in the regions where more people live. However, the relationship '
                                  'between crime and inhabitant number is not linear. For instance, Braga is the third city with more people. '
-                                 'However, it appears behind Setúbal and Santarém districts with lessa cases.',
+                                 'However, it appears behind Setúbal and Santarém districts with less cases.',
                     ),
                     dcc.Loading(
                         id="loading-1",
@@ -208,34 +209,32 @@ app.layout = html.Div(children=[
             html.P(
                 id='manifesto_description',
                 children='The "Feminicídio à Vista" project goal is to bring attention to the femicide problem and not let '
-                         'the murdered women forgotten. Arquivo.pt API allowed us to recover the those stories and '
-                         'retrieve a femicide dataset that we make available to the community. '
-                         'Those data can be used not only by researchers but also to build artificial intelligence models.'
-                         ' With such tools it would be possible to find and annotate other femicide news.'
+                         'the murdered women be forgotten. Arquivo.pt API allowed us to recover those stories and retrieve '
+                         'a femicide dataset that we make available to the community. Those data can be used not only by '
+                         'researchers but also to build artificial intelligence models. With such tools, it would be '
+                         'possible to find and automatically annotate other femicide news.'
             ),
             html.P(
                 id='manifesto_description2',
-                children='Femicide is a relatively new term. It refers to extermination of women.'
-                         ' These crimes can not be seen as disconnected from gender issues and intensions to control women behavior and existence.'
-                         'In some countries femicide crime is now present in the law. '
-                         'However, this is not the case in Portuguese. In Portugal there is a void in the law [1] and there are studies missing on this issue [2]. ',
+                children='Femicide is a relatively new term. It refers to the extermination of women. These crimes can '
+                         'not be seen as disconnected from gender issues and intensions to control women\'s behavior and '
+                         'existence. In some countries, femicide crime is now present in the law. However, this is not the '
+                         'case in Portugal. In this country, there is a void in the law [1] and studies are missing on this issue [2].',
             ),
             html.P(
                 id='manifesto_description3',
-                children= 'This project adds to other research efforts [3] and makes available '
-                         'not only a dataset but also a open-source platform. In this it is possible '
-                         'to not forget the victims, and see the relationship between news statistics and space and time. '
-                        'The presented data refer to individual femicide cases. '
-                         'However, femicide requires a collective societal response. For this '
-                         'we need to act and the first steps are recognize femicide as a crime, collect data, '
-                         'analyse those data for interventions planning. ',
+                children= 'This project adds to other research efforts [3] and makes available not only a dataset but also '
+                          'an open-source platform. In this, it is possible to remember the victims and see the relationship '
+                          'between news statistics in space and time. If the presented data refer to individual femicide cases, '
+                          'femicide requires a collective societal response. We need to take action and the first steps are to '
+                          'recognize femicide as a crime, collect data, and analyze those data for intervention planning.',
             ),
             html.P(
                 id='manifesto_description4',
-                children= '*This project is not*: a set of official statistics about femicide in Portugal. '
-                          'In this project we collected news on the Arquivo.pt. '
-                          'This method has limitations and probably misses data. This project is only '
-                          'an initial data collection effort, that points to the need of officially better document those crimes. ',
+                children= '*This project is not*: a set of official statistics about femicide in Portugal. In this project, '
+                          'we collected news on the Arquivo.pt. This method has limitations and probably misses data. '
+                          '"Feminicidio A Vista" is an initial data collection effort, that points to the need to officially '
+                          'better document those crimes.',
             )
         ],
     ),
