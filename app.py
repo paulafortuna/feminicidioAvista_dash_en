@@ -255,6 +255,7 @@ app.layout = html.Div(children=[
 
                     html.P(
                         id='dataset_description3',
+
                         children= [ dcc.Markdown('''Access the dataset here: [dataset](https://github.com/paulafortuna/feminicidioAvista_dataset)'''),
                                     '*This project is not*: a set of official statistics about femicide in Portugal. In this project, '
                                       'we collected news on the Arquivo.pt. This method has limitations and probably misses data. '
