@@ -78,7 +78,7 @@ app.layout = html.Div(children=[
                             ),
                     html.P(
                             id='pagedescription',
-                            children='"Feminicídio à Vista" is a datactivism plataform. It calls attention and demands an '
+                            children='"Feminicídio à Vista" is a datactivism platform. It calls attention and demands an '
                                      'answer to the violence against women in Portugal. This violence leads to murder many '
                                      'times. It includes itself in open-source movements to challenge existing power relations.',
                     ),
@@ -88,6 +88,35 @@ app.layout = html.Div(children=[
             html.Div(
                     id='continue',
                     children='Continue down',
+            ),
+        ],
+    ),
+    html.Div(
+        id='manifesto_container',
+        children=[
+            html.Div(
+                id='manifesto',
+                children=[
+                    html.H3("MANIFESTO"),
+                    html.P(
+                        id='manifesto_description',
+                        children='The "Feminicídio à Vista" project goal is to bring attention to the femicide problem and not let '
+                         'the murdered women be forgotten. These crimes can not be seen as disconnected from gender issues and '
+                                 'intensions to control women\'s behavior and existence. '
+                    'In some countries, femicide crime is now present in the law. However, in Portugal there is a void in the law [1] '
+                                 'and studies are missing on this issue [2].',
+                    ),
+                    html.P(
+                        id='manifesto_description3',
+                        children=['If the presented data refer to individual femicide cases, '
+                          'femicide requires a collective societal response. We need to take action and the first steps are:',
+                                dcc.Markdown('''1. legally recognize the femicide crime.'''),
+                                dcc.Markdown('''2. collect data and identify data absence as information.'''),
+                                dcc.Markdown('''3. use data for policy and intervention planning.'''),
+                                dcc.Markdown('''4. and this with a collaborative open-source platform.'''),
+                                 'With this principles in mind, "Feminicídio À Vista" presents set of femicide data and statistics for Continental Portugal.',]
+                    ),
+                ],
             ),
         ],
     ),
@@ -203,39 +232,43 @@ app.layout = html.Div(children=[
         ],
     ),
     html.Div(
-        id='manifesto',
+        id='dataset_container',
         children=[
-            html.H3("MANIFESTO"),
-            html.P(
-                id='manifesto_description',
-                children='The "Feminicídio à Vista" project goal is to bring attention to the femicide problem and not let '
-                         'the murdered women be forgotten. Arquivo.pt API allowed us to recover those stories and retrieve '
-                         'a femicide dataset that we make available to the community. Those data can be used not only by '
+            html.Div(
+                id='dataset_section',
+                children=[
+                    html.H3("DATASET AND DETAILS"),
+                    html.P(
+                        id='dataset_description1',
+                        children='This project adds to other research efforts [3] and uses '
+                                 ' Arquivo.pt API to recover stories and retrieve a femicide news dataset '
+                                 'that we make available to the community. It makes available not only a dataset but also '
+                          'an open-source platform where it is possible to remember the victims and see the relationship '
+                          'between news statistics in space and time. ',
+                    ),
+                    html.P(
+                        id='dataset_description2',
+                        children='Those data can be used not only by '
                          'researchers but also to build artificial intelligence models. With such tools, it would be '
                          'possible to find and automatically annotate other femicide news.'
+                    ),
+
+                    html.P(
+                        id='dataset_description3',
+                        children= [ dcc.Markdown('''O dataset pode ser acedido aqui: [dataset](https://feminicidioavistaen.herokuapp.com/)'''),
+                                    '*This project is not*: a set of official statistics about femicide in Portugal. In this project, '
+                                      'we collected news on the Arquivo.pt. This method has limitations and probably misses data. '
+                                      '"Feminicidio A Vista" is an initial data collection effort, that points to the need to officially '
+                                      'better document those crimes.',
+                                   '',
+                                    html.H4("Sources:"),
+                                   dcc.Markdown('''\[1\] [A transversalidade dos crimes de femicídio/feminicídio no Brasil e em Portugal](https://hdl.handle.net/10216/123178)'''),
+                                   dcc.Markdown('''\[2\] [Femminicidio in Europa un confronto tra paesi](https://www.europeandatajournalism.eu/ita/Notizie/Data-news/Femminicidio-in-Europa-un-confronto-tra-paesi)'''),
+                                   dcc.Markdown('''\[3\] [Observatorio de mulheres assassinadas](http://www.umarfeminismos.org/index.php/observatorio-de-mulheres-assassinadas)'''),
+                                   ]
+                    )
+                ],
             ),
-            html.P(
-                id='manifesto_description2',
-                children='Femicide is a relatively new term. It refers to the extermination of women. These crimes can '
-                         'not be seen as disconnected from gender issues and intensions to control women\'s behavior and '
-                         'existence. In some countries, femicide crime is now present in the law. However, this is not the '
-                         'case in Portugal. In this country, there is a void in the law [1] and studies are missing on this issue [2].',
-            ),
-            html.P(
-                id='manifesto_description3',
-                children= 'This project adds to other research efforts [3] and makes available not only a dataset but also '
-                          'an open-source platform. In this, it is possible to remember the victims and see the relationship '
-                          'between news statistics in space and time. If the presented data refer to individual femicide cases, '
-                          'femicide requires a collective societal response. We need to take action and the first steps are to '
-                          'recognize femicide as a crime, collect data, and analyze those data for intervention planning.',
-            ),
-            html.P(
-                id='manifesto_description4',
-                children= '*This project is not*: a set of official statistics about femicide in Portugal. In this project, '
-                          'we collected news on the Arquivo.pt. This method has limitations and probably misses data. '
-                          '"Feminicidio A Vista" is an initial data collection effort, that points to the need to officially '
-                          'better document those crimes.',
-            )
         ],
     ),
     html.Div(
