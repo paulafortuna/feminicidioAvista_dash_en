@@ -103,7 +103,7 @@ app.layout = html.Div(children=[
                         children='The "Feminicídio à Vista" project goal is to bring attention to the femicide problem and not let '
                          'the murdered women be forgotten. These crimes can not be seen as disconnected from gender issues and '
                                  'intensions to control women\'s behavior and existence. '
-                    'In some countries, femicide crime is now present in the law. However, in Portugal there is a void in the law [1] '
+                    'In some countries, femicide crime is now present in the law. However, in Portugal there is a legal void[1] '
                                  'and studies are missing on this issue [2].',
                     ),
                     html.P(
@@ -114,7 +114,7 @@ app.layout = html.Div(children=[
                                 dcc.Markdown('''2. collect data and identify data absence as information.'''),
                                 dcc.Markdown('''3. use data for policy and intervention planning.'''),
                                 dcc.Markdown('''4. and this with a collaborative open-source platform.'''),
-                                 'With this principles in mind, "Feminicídio À Vista" presents set of femicide data and statistics for Continental Portugal.',]
+                                 'With this principles in mind, "Feminicídio À Vista" presents femicide data and statistics for Continental Portugal.',]
                     ),
                 ],
             ),
@@ -249,13 +249,13 @@ app.layout = html.Div(children=[
                     html.P(
                         id='dataset_description2',
                         children='Those data can be used not only by '
-                         'researchers but also to build artificial intelligence models. With such tools, it would be '
+                         'researchers from different fields but also to build artificial intelligence models. With such tools, it would be '
                          'possible to find and automatically annotate other femicide news.'
                     ),
 
                     html.P(
                         id='dataset_description3',
-                        children= [ dcc.Markdown('''O dataset pode ser acedido aqui: [dataset](https://feminicidioavistaen.herokuapp.com/)'''),
+                        children= [ dcc.Markdown('''Access the dataset here: [dataset](https://github.com/paulafortuna/feminicidioAvista_dataset)'''),
                                     '*This project is not*: a set of official statistics about femicide in Portugal. In this project, '
                                       'we collected news on the Arquivo.pt. This method has limitations and probably misses data. '
                                       '"Feminicidio A Vista" is an initial data collection effort, that points to the need to officially '
