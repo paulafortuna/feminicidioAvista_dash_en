@@ -120,3 +120,4 @@ docker-compose up -d
 In case you have any contact, suggestion or will to collaborate in this project, please contact me through my [LinkedIn](
 https://pt.linkedin.com/in/paula-fortuna-a6b75a7a).
 
+
